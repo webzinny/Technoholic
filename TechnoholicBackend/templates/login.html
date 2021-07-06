@@ -1,0 +1,274 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Technoholic.login</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+</head>
+
+<style>
+    	body,
+		html {
+			margin: 0;
+			padding: 50px 0;
+			height: 600px;
+			background: #60a3bc !important;
+		}
+		.user_card {
+			height: 400px;
+			width: 350px;
+			margin-top: auto;
+			margin-bottom: auto;
+			background: #f39c12;
+			position: relative;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			padding: 10px;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			-moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			border-radius: 5px;
+
+		}
+		.brand_logo_container {
+			position: absolute;
+			height: 170px;
+			width: 170px;
+			top: -75px;
+			border-radius: 50%;
+			background: #60a3bc;
+			padding: 10px;
+			text-align: center;
+		}
+		.brand_logo {
+			height: 150px;
+			width: 150px;
+			border-radius: 50%;
+			border: 2px solid white;
+		}
+		.form_container {
+			margin-top: 100px;
+		}
+		.login_btn {
+			width: 100%;
+			background: #c0392b !important;
+			color: white !important;
+		}
+		.login_btn:focus {
+			box-shadow: none !important;
+			outline: 0px !important;
+		}
+		.login_container {
+			padding: 0 2rem;
+		}
+		.input-group-text {
+			background: #c0392b !important;
+			color: white !important;
+			border: 0 !important;
+			border-radius: 0.25rem 0 0 0.25rem !important;
+		}
+		.input_user,
+		.input_pass:focus {
+			box-shadow: none !important;
+			outline: 0px !important;
+		}
+		.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+			background-color: #c0392b !important;
+		}
+        .footer1{
+ background-color: black;
+ color: white;
+
+}
+.footer1 h2{
+	margin: 5px;
+	padding: 8px;
+	font-size: 25px;
+	font-family: "Times New Roman", Times, serif;
+
+}
+.footer1 a{
+	color: white;
+}
+.footer1 a:hover{
+	color: ;
+}
+
+.footer1 p{
+	margin: 5px;
+	padding-top: 2px;
+	padding-left: 10px;
+	font-size: 18px;
+	font-family: "Times New Roman", Times, serif;
+
+}
+.footer1 h2{margin: 5px;
+	padding: 5px;
+	border-bottom: 1px solid white;
+
+
+}
+/*==========================footer2===========================*/
+.footer2{
+
+	background-color: #e6e6e6;
+	color: black;
+
+}
+.footer2 p{
+	margin: 8px;
+	padding: 8px;
+	font-size: 16px;
+	font-family: "Times New Roman", Times, serif;
+
+}
+.myframegmap{
+
+    border: 3px solid #f6f5f0;
+    border-radius: 8px;
+    height: 130px;
+    width: 80%;
+    box-shadow: 0px 0px 3px 3px #e7e4dc;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+
+}
+
+
+</style>
+
+
+
+<body>
+
+
+
+
+
+	<div class="container h-100">
+		<div class="d-flex justify-content-center h-100">
+			<div class="user_card">
+				<div class="d-flex justify-content-center">
+					<div class="brand_logo_container">
+						<img src="{%static 'logo.png'%}" class="brand_logo" alt="Logo">
+					</div>
+				</div>
+				<div class="d-flex justify-content-center form_container">
+					<form>
+						<div class="input-group mb-3">
+							<div class="input-group-append">
+								<span class="input-group-text"><i class="fas fa-user"></i></span>
+							</div>
+							<input type="text" name="" class="form-control input_user" value="" placeholder="username">
+						</div>
+						<div class="input-group mb-2">
+							<div class="input-group-append">
+								<span class="input-group-text"><i class="fas fa-key"></i></span>
+							</div>
+							<input type="password" name="" class="form-control input_pass" value="" placeholder="password">
+						</div>
+						<div class="form-group">
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="customControlInline">
+								<label class="custom-control-label" for="customControlInline">Remember me</label>
+							</div>
+						</div>
+							<div class="d-flex justify-content-center mt-3 login_container">
+				 	<button type="button" name="button" class="btn login_btn"> Login</button>
+				   </div>
+					</form>
+				</div>
+
+				<div class="mt-4">
+					<div class="d-flex justify-content-center links">
+						Don't have an account? <a href="signup.html" class="ml-2">Sign Up</a>
+					</div>
+					<div class="d-flex justify-content-center links">
+						<a href="#">Forgot your password?</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<footer>
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<div class="footer">
+		  <div class="footer1">
+		<div class="container-fluid">
+
+		  <div class="container ">
+		  <div class="row">
+			<div class="col-sm-4">
+			  <h2>About Us</h2><p>
+								   <div class="myframegmap">
+									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14664.934312558262!2d77.42483967753938!3d23.234585807535893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c4269deb07df9%3A0xfee61a854a2e5374!2sMaharana%20Pratap%20Nagar%2C%20Bhopal%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1625379583661!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+							</div></p><br>
+			</div>
+			<div class="col-sm-4">
+			  <h2>Home</h2>
+			  <p>
+				<i class="fa fa-home"></i>    <a href="./index.html"> Home</a><br>
+				<i class="fa fa-user-o"></i>    <a href="#"> About Us</a><br>
+				<i class="fa fa-map-marker"></i>    <a href="#"> Contact Us</a><br>
+				<i class="fa fa-briefcase"></i>    <a href="#services-container"> Services</a><br>
+				<i class="fa fa-question-circle"></i>    <a href="#"> Term & Conditions</a><br><br>
+
+
+			  </p>
+
+
+			</div>
+			<div class="col-sm-4 ">
+			  <h2>Contact Us</h2>
+			  <p >
+				<i class="fa fa-phone"></i>    <a href="tel:0123456789"> +919155104355 , +919155022343 8210044671</a><br>
+                <i class="fa fa-envelope"></i>    <a href="mailto:abc@abc.com"> amitpanday196@.com <br> kumarakshansha9572@gmail.com <br>mda97671@gmail.com</a><br>
+                <i class="fa fa-map-marker"></i>     M.P.Nagar,Bhopal(MP) India
+			  </p>
+
+			  <br>
+			</div>
+		  </div>
+			<div class="clear30"></div>
+		</div>
+		</div></div>
+
+
+		<div class="footer2">
+		  <div class="container-fluid">
+		  <div class="container">
+			<div class="row">
+			  <div class="clear30"></div>
+			  <div class="col-sm-12 text-center"><p><strong>copyright &copy; 2021 All right reserved.</strong></p></div>
+			  <div class="clear30"></div>
+			</div>
+
+		  </div>
+
+		</div>
+		</div>
+		</div>
+	  </footer>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
