@@ -1,0 +1,281 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technoholic</title>
+    <link rel="stylesheet" href="{%static 'style.css'%}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{%static 'css/bootstrap.css' %}">
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+      <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+</head>
+
+<body>
+
+
+
+    <nav class="navbar navbar-inverse text-align = center" >
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand fixed" href="#myCarousel">Technoholic</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#home">Home</a></li>
+              <li><a href="#services-container">Services</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#devloper-section">Developer</a></li>
+            </ul>
+
+            <form class="navbar-form navbar-left" action="/action_page.php">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search">
+                <div class="input-group-btn">
+                  <button class="btn btn-default" type="submit">
+                    <i class="glyphicon glyphicon-search"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+
+
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="{%url 'signup'%}" target="blank"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+              <li><a href="{%url 'login'%}"  target="blank"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+
+
+ <div class="container-fluid margin">
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner margin2">
+
+        <div class="item active">
+          <img src="{%static 'c1.jpg'%}" alt="" style="width:100%;">
+          <div class="carousel-caption">
+            <h3>Go for Technical World</h3>
+            <p>We can Win Everything</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="{%static 'c2.jpg'%}" alt="" style="width:100%;">
+          <div class="carousel-caption">
+            <h3>Go For Technical World</h3>
+            <p>we can Win Everything</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="{%static 'c3.jpg'%}" alt="" style="width:100%;">
+          <div class="carousel-caption">
+            <h3>Go For Technical World</h3>
+            <p>we can Win Everything</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="{%static 'c4.jpg'%}" alt="" style="width:100%;">
+          <div class="carousel-caption">
+            <h3>Go For Technical World</h3>
+            <p>we can Win Everything</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+
+
+
+
+
+    <section id="home">
+        <h1 class="h-primary">Welcome to Technoholic</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, dolorem cupiditate. Dolore quae ut possimus
+            reiciendis, nostrum, dolorem minus excepturi aliquam saepe amet in totam fugiat. Unde ad nisi fuga commodi
+            cum omnis odit?</p>
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/srn5jgr9TZo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <a href="login.html"> <button class="btn">Continue</button></a>
+    </section>
+
+
+    <section id="services-container">
+        <h1 class="h-primary center">our services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="{%static 'img1.png'%}" alt="">
+                <h2 class="h-secondary center">JAVA</h2>
+                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum labore distinctio
+                    animi, quisquam omnis similique delectus eius quos incidunt odit consequuntur alias .</p>
+            </div>
+            <div class="box">
+                <img src="{%static 'img2.png'%}" alt="">
+                <h2 class="h-secondary center">PYTHON</h2>
+                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum labore distinctio
+                    animi, quisquam omnis similique delectus eius quos incidunt odit consequuntur alias .</p>
+            </div>
+            <div class="box">
+                <img src="{%static 'img3.png'%}" alt="">
+                <h2 class="h-secondary center">HTML</h2>
+                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum labore distinctio
+                    animi, quisquam omnis similique delectus eius quos incidunt odit consequuntur alias .</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="devloper-section">
+        <h1 class="h-primary devloper center">Our devlopers</h1>
+        <div id="devloper">
+            <div class="devloper-item">
+                <img src="{%static 'akashansha.jpg'%}" alt="">
+            </div>
+            <div class="devloper-item">
+                <img src="{%static 'pp.jpg'%}" alt="">
+            </div>
+            <div class="devloper-item">
+                <img src="{%static 'attaulla.jpeg'%}" alt="">
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section id="contact">
+        <h1 class="h.primary center">CONTACT US</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text=" name" id="name" placeholder="enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="name">Email:</label>
+                    <input type="text=" name" id="email" placeholder="enter your Email">
+                </div>
+                <div class="form-group">
+                    <label for="name">Phone:</label>
+                    <input type="text=" name" id="phone" placeholder="enter your Phone">
+                </div>
+                <div>
+                   Male: <input type="radio" name="status">
+                   Female: <input type="radio" name="status">
+                   other: <input type="radio" name="status">
+                </div>
+                <div class="form-group">
+                    <label for="name">Message:</label>
+                    <textarea name="Message" id="" cols="30" rows="10"></textarea>
+            </form>
+        </div>
+    </section>
+
+<!-------------------- footer section ------------------------------------->
+    <footer>
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+      <div class="footer">
+        <div class="footer1">
+      <div class="container-fluid">
+
+        <div class="container ">
+        <div class="row">
+          <div class="col-sm-4">
+            <h2>About Us</h2><p>
+                                 <div class="myframegmap">
+                                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14664.934312558262!2d77.42483967753938!3d23.234585807535893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c4269deb07df9%3A0xfee61a854a2e5374!2sMaharana%20Pratap%20Nagar%2C%20Bhopal%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1625379583661!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                          </div></p><br>
+          </div>
+          <div class="col-sm-4">
+            <h2>Home</h2>
+            <p>
+              <i class="fa fa-home"></i>    <a href="./index.html"> Home</a><br>
+              <i class="fa fa-user-o"></i>    <a href="#"> About Us</a><br>
+              <i class="fa fa-map-marker"></i>    <a href="#contact"> Contact Us</a><br>
+              <i class="fa fa-briefcase"></i>    <a href="#services-container"> Services</a><br>
+              <i class="fa fa-question-circle"></i>    <a href="#"> Term & Conditions</a><br><br>
+
+
+            </p>
+
+
+          </div>
+          <div class="col-sm-4 ">
+            <h2>Contact Us</h2>
+            <p >
+
+              <i class="fa fa-phone"></i>    <a href="tel:0123456789"> +919155104355 , +919155022343 8210044671</a><br>
+              <i class="fa fa-envelope"></i>    <a href="mailto:abc@abc.com"> amitpanday196@.com <br> kumarakshansha9572@gmail.com <br>mda97671@gmail.com</a><br>
+              <i class="fa fa-map-marker"></i>     M.P.Nagar,Bhopal(MP) India
+            </p>
+
+            <br>
+          </div>
+        </div>
+          <div class="clear30"></div>
+      </div>
+      </div></div>
+
+
+      <div class="footer2">
+        <div class="container-fluid">
+        <div class="container">
+          <div class="row">
+            <div class="clear30"></div>
+            <div class="col-sm-12 text-center"><p><strong>copyright &copy; 2021 All right reserved.</strong></p></div>
+            <div class="clear30"></div>
+          </div>
+
+        </div>
+
+      </div>
+      </div>
+      </div>
+    </footer>
+
+
+
+
+
+    <script type="text/javascript" src="{%static 'js/bootstrap.min.js'%}"></script>
+    <script type="text/javascript" src="{%static 'js/jquery-3.2.2.min.js'%}"></script>
+</body>
+
+</html>
